@@ -1,10 +1,10 @@
 import { Link, Route, Routes } from "react-router-dom"
 import { Suspense } from 'react'
 import './styles/index.scss'
-import { useTheme } from "./providers/ThemeProvider"
-import { AboutPage } from "../pages/AboutPage"
-import { MainPage } from "../pages/MainPage"
-import { classNames } from "../shared/lib/classNames/classNames"
+import { classNames } from "shared/lib/classNames/classNames"
+import { AboutPage } from "pages/AboutPage"
+import { MainPage } from "pages/MainPage"
+import { useTheme } from "app/providers/ThemeProvider"
 
 
 const App = () => {
