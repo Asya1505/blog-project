@@ -5,6 +5,7 @@ import { classNames } from "shared/lib/classNames/classNames"
 import { AboutPage } from "pages/AboutPage"
 import { MainPage } from "pages/MainPage"
 import { useTheme } from "app/providers/ThemeProvider"
+import { Navbar } from "widgets/Nawbar"
 
 
 const App = () => {
@@ -12,9 +13,8 @@ const App = () => {
 
   return (
     <div className={classNames('app', {}, [theme])}>
+      <Navbar />
       <button onClick={toggleTheme}>TOGGLE</button>
-      <Link to='/'>Главная</Link>
-      <Link to='/about'>О сайте</Link>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path={'/about'} element={<AboutPage />} />
