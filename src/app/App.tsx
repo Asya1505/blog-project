@@ -9,12 +9,11 @@ import { Navbar } from "widgets/Nawbar"
 
 
 const App = () => {
-  const {theme, toggleTheme} = useTheme()
+  const { theme } = useTheme()
 
   return (
     <div className={classNames('app', {}, [theme])}>
       <Navbar />
-      <button onClick={toggleTheme}>TOGGLE</button>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path={'/about'} element={<AboutPage />} />
