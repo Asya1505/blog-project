@@ -1,4 +1,4 @@
 export const test = (arg: number): string => {
-    console.log('random', arg)
-    return `test ${arg}`
-}
+  console.log('random', arg);
+  return `test ${arg}`;
+};
