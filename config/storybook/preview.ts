@@ -19,6 +19,6 @@ const preview: Preview = {
 
 //start with comment
 //addDecorator(()=>ThemeDecorator(Theme.LIGHT))
-addDecorator(StyleDecorator)
-addDecorator(RouterDecorator)
+//addDecorator(StyleDecorator)
+//addDecorator(RouterDecorator)
 export default preview
