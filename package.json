@@ -18,7 +18,8 @@
     "test:ui:json": "node scripts/generate-visual-json-report.js",
     "test:ui:html": "reg-cli --from .loki/report.json --report .loki/report.html",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "storybook:build": "storybook build -c ./config/storybook"
+    "storybook:build": "storybook build -c ./config/storybook",
+    "start:dev:server": "node json-server --watch ./json-server/db.json --port 8000"
   },
   "keywords": [],
   "author": "",
@@ -62,6 +63,7 @@
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
+    "json-server": "^0.17.0",
     "mini-css-extract-plugin": "^2.5.3",
     "reg-cli": "^0.17.7",
     "regenerator-runtime": "^0.13.9",
