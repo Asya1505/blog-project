@@ -5,9 +5,9 @@ module.exports = {
     jest: true
   },
   extends: [
-    'plugin:react/recommended', 
+    'plugin:react/recommended',
     //'airbnb', 
-    'plugin:i18next/recommended', 
+    'plugin:i18next/recommended',
     'plugin:storybook/recommended'
   ],
   parser: '@typescript-eslint/parser',
@@ -19,8 +19,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    'react', 
-    '@typescript-eslint', 
+    'react',
+    '@typescript-eslint',
     'i18next',
     'react-hook'
   ],
@@ -46,18 +46,15 @@ module.exports = {
     'i18next/no-literal-string': [
       'error',
       {
-          markupOnly: true,
-          ignoreAttribute: ['data-testid','data-testId', 'to'],
+        markupOnly: true,
+        ignoreAttribute: ['data-testid', 'to'],
       },
     ],
-    'max-len': ['error', {
-      ignoreComments: true,
-      code: 100
-    }],
+    'max-len': ['error', { ignoreComments: true, code: 100 }],
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "error",
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
     'no-param-reassign': 'off',
   },
   globals: {
@@ -67,8 +64,7 @@ module.exports = {
     files: ['**/src/**/*.test.{ts,tsx}'],
     rules: {
       'i18next/no-literal-string': 'off',
-      'max-len': 'off',
-      '/no-literal-string': false
+      'max-len': 'off'
     }
   }]
 };
