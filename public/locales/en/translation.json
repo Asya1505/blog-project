@@ -8,5 +8,7 @@
   "Переключить": "toggle",
   "Короткий язык": "Ru",
   "decrement": "decrement",
-  "increment": "increment"
+  "increment": "increment",
+  "Введите логин": "Input login",
+  "Введите пароль": "Input password"
 }
