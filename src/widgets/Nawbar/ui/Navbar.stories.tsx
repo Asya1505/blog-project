@@ -1,22 +1,22 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Navbar } from './Navbar';
 import { BrowserRouter } from 'react-router-dom';
+import { Navbar } from './Navbar';
 
 const meta: Meta<typeof Navbar> = {
   title: 'widget/Navbar',
   component: Navbar,
   tags: ['autodocs'],
   argTypes: {
-    //backgroundColor: { control: 'color' },
+    // backgroundColor: { control: 'color' },
   },
 };
 
 export default meta
 type Story = StoryObj<typeof Navbar>
 
-//ToDo fix
+// ToDo fix
 export const Light: Story = {
   decorators: [
     ThemeDecorator(Theme.LIGHT),
@@ -24,8 +24,8 @@ export const Light: Story = {
       <BrowserRouter>
         <Story />
       </BrowserRouter>
-    )
-  ]
+    ),
+  ],
 }
 
 export const Dark: Story = {
@@ -36,5 +36,5 @@ export const Dark: Story = {
         <Story />
       </BrowserRouter>
     ),
-  ]
+  ],
 }

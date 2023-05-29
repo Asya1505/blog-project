@@ -6,7 +6,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    //'airbnb', 
+    'airbnb', 
     'plugin:i18next/recommended',
     'plugin:storybook/recommended'
   ],
@@ -22,7 +22,7 @@ module.exports = {
     'react',
     '@typescript-eslint',
     'i18next',
-    'react-hook'
+    'react-hooks'
   ],
   rules: {
     'react/jsx-indent': [2, 2],

@@ -9,7 +9,7 @@ const meta: Meta<typeof NotFoundPage> = {
   component: NotFoundPage,
   tags: ['autodocs'],
   argTypes: {
-    //backgroundColor: { control: 'color' },
+    // backgroundColor: { control: 'color' },
   },
   decorators: [
     (Story) => (
@@ -17,19 +17,19 @@ const meta: Meta<typeof NotFoundPage> = {
         <Story />
       </BrowserRouter>
     ),
-    ThemeDecorator(Theme.LIGHT)
-  ]
+    ThemeDecorator(Theme.LIGHT),
+  ],
 };
 
 export default meta
 type Story = StoryObj<typeof NotFoundPage>
 
-//ToDo fix
+// ToDo fix
 export const Light: Story = {
 }
 
 export const Dark: Story = {
   decorators: [
-    ThemeDecorator(Theme.DARK)
-  ]
+    ThemeDecorator(Theme.DARK),
+  ],
 }

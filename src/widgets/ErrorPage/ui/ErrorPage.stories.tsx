@@ -9,14 +9,14 @@ const meta: Meta<typeof ErrorPage> = {
   component: ErrorPage,
   tags: ['autodocs'],
   argTypes: {
-    //backgroundColor: { control: 'color' },
+    // backgroundColor: { control: 'color' },
   },
 };
 
 export default meta
 type Story = StoryObj<typeof ErrorPage>
 
-//ToDo fix
+// ToDo fix
 export const Light: Story = {
   decorators: [
     ThemeDecorator(Theme.LIGHT),
@@ -24,8 +24,8 @@ export const Light: Story = {
       <BrowserRouter>
         <Story />
       </BrowserRouter>
-    )
-  ]
+    ),
+  ],
 }
 
 export const Dark: Story = {
@@ -36,5 +36,5 @@ export const Dark: Story = {
         <Story />
       </BrowserRouter>
     ),
-  ]
+  ],
 }

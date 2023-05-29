@@ -1,6 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames'
+import {
+  ChangeEvent, InputHTMLAttributes, useEffect, useRef, useState,
+} from 'react'
 import cls from './Input.module.scss'
-import { ChangeEvent, InputHTMLAttributes, useEffect, useRef, useState } from 'react'
 
 type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange'>
 
@@ -52,17 +54,17 @@ export const Input = (props: InputProps) => {
           {`${placeholder}`}
         </div>
       )}
-      
-        <input
-          ref={ref}
-          type={type}
-          value={value}
-          onChange={onChangeHandler}
-          className={cls.input}
-          onFocus={onFocus}
-          onBlur={onBlur}
-          {...otherProps}
-        />
+
+      <input
+        ref={ref}
+        type={type}
+        value={value}
+        onChange={onChangeHandler}
+        className={cls.input}
+        onFocus={onFocus}
+        onBlur={onBlur}
+        {...otherProps}
+      />
 
     </div>
   )

@@ -1,7 +1,7 @@
-import { componentRender } from "shared/lib/tests/componentRender/componentRender"
-import { User } from "./User"
+import { componentRender } from 'shared/lib/tests/componentRender/componentRender'
 import { userEvent } from '@storybook/testing-library'
 import { screen } from '@testing-library/react'
+import { User } from './User'
 
 describe('User', () => {
   test('test render', () => {

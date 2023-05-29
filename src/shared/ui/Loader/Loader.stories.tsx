@@ -9,7 +9,7 @@ const meta: Meta<typeof Loader> = {
   component: Loader,
   tags: ['autodocs'],
   argTypes: {
-    //backgroundColor: { control: 'color' },
+    // backgroundColor: { control: 'color' },
   },
   decorators: [
     (Story) => (
@@ -17,17 +17,17 @@ const meta: Meta<typeof Loader> = {
         <Story />
       </BrowserRouter>
     ),
-  ]
+  ],
 };
 
 export default meta
 type Story = StoryObj<typeof Loader>
 
-//ToDo fix
+// ToDo fix
 export const Light: Story = {}
 
 export const Dark: Story = {
   decorators: [
-    ThemeDecorator(Theme.DARK)
-  ]
+    ThemeDecorator(Theme.DARK),
+  ],
 }

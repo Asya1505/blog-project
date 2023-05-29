@@ -2,13 +2,13 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useState } from 'react';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/Button';
-import cls from './Sidebar.module.scss';
 import { LangSwitcher } from 'shared/ui/LangSwitcher';
 import { useTranslation } from 'react-i18next';
 import { RoutePath } from 'shared/config/routerConfig/routeConfig';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import AboutIcon from 'shared/assets/icons/about-20-20.svg';
 import MainIcon from 'shared/assets/icons/main-20-20.svg';
+import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
   className?: string
@@ -23,8 +23,8 @@ export const Sidebar = ({ className }: SidebarProps) => {
   }
 
   return (
-    <div 
-      data-testid='sidebar'
+    <div
+      data-testid="sidebar"
       className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
     >
       <Button

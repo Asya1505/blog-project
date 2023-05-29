@@ -20,7 +20,7 @@ export function componentRender(component: ReactNode, options: componentRenderOp
 
   return render(
     <StoreProvider initialState={initialState}>
-      <MemoryRouter initialEntries={[route]} >
+      <MemoryRouter initialEntries={[route]}>
         <I18nextProvider i18n={i18nForTests}>
           {component}
         </I18nextProvider>

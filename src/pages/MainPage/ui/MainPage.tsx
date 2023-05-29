@@ -14,13 +14,13 @@ const MainPage = () => {
       <div>{t('Главная')}</div>
       <Counter />
       <Input
-        type='text'
+        type="text"
         value={value}
         onChange={(value) => setValue(value)}
-        placeholder='введите текст'
+        placeholder="введите текст"
       />
     </div>
-  );
-};
+  )
+}
 
 export default MainPage;

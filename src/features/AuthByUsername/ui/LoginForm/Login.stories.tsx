@@ -6,7 +6,7 @@ const meta: Meta<typeof LoginForm> = {
   component: LoginForm,
   tags: ['autodocs'],
   argTypes: {
-    //backgroundColor: { control: 'color' },
+    // backgroundColor: { control: 'color' },
   },
 };
 
@@ -15,7 +15,6 @@ type Story = StoryObj<typeof LoginForm>;
 
 export const Primary: Story = {
   args: {
-    
-  }
-}
 
+  },
+}

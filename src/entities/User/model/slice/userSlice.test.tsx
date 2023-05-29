@@ -9,6 +9,4 @@ describe('userSlice.test', () => {
     //   userReducer(state, userActions.decrement()),
     // ).toEqual({ value: 9 })
   })
-  
-
 })

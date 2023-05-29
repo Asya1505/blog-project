@@ -5,10 +5,6 @@ interface UserProps {
   className?: string
 }
 
-export const User = ({className}: UserProps) => {
-
-  return (
-    <div className={classNames(cls.User,{},[className])}>
-    </div>
+export const User = ({ className }: UserProps) => (
+  <div className={classNames(cls.User, {}, [className])} />
 )
-}

@@ -1,10 +1,10 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import cls from './Navbar.module.scss';
 import { Modal } from 'shared/ui/Modal/Modal';
 import { useTranslation } from 'react-i18next';
 import { useCallback, useState } from 'react';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { LoginModal } from 'features/AuthByUsername';
+import cls from './Navbar.module.scss';
 
 interface NavbarProps {
   className?: string
@@ -15,10 +15,10 @@ export const Navbar = ({ className }: NavbarProps) => {
   const [isAuthModal, setIsAuthModal] = useState(false);
 
   const onToggleModal = useCallback(() => {
-      setIsAuthModal((prev) => !prev);
+    setIsAuthModal((prev) => !prev);
   }, [])
 
-  return(
+  return (
     <div className={classNames(cls.navbar, {}, [className])}>
       <div className={cls.links}>
         <Button
