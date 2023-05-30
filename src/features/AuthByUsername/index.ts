@@ -4,4 +4,4 @@ import { LoginModal } from './ui/LoginModal/LoginModal'
 
 export { LoginModal }
 export { LoginSchema }
-export {loginReducer}
+export { loginReducer }
