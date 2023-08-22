@@ -1,5 +1,6 @@
 import { FC, useEffect } from 'react'
 import { useDispatch, useStore } from 'react-redux'
+// eslint-disable-next-line max-len
 import { ReduxStoreWithManager, StateSchemaKey } from 'app/providers/StoreProvider/config/StateSchema'
 import { Reducer } from '@reduxjs/toolkit'
 
@@ -30,7 +31,6 @@ export const DynamicModuleLoader: FC<DynamicModuleLoaderProps> = (props) => {
       dispatch({ type: `@INIT ${name} reducer` })
     })
 
-      
     return () => {
       if (removeAfterUnmount) {
         Object.entries(reducers).forEach(([name, reducer]: ReducersListEntry) => {

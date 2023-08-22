@@ -8,7 +8,6 @@ export {
   UserSchema,
 } from './model/types/user'
 
-
-export { 
-  getUserAuthData 
+export {
+  getUserAuthData,
 } from './model/selectors/getUserAuthData/getUserAuthData'

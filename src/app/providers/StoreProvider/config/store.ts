@@ -6,13 +6,12 @@ import { createReducerManager } from './reduserManager'
 
 export function createReduxStore(
   initialState?: StateSchema,
-  asyncReducers?: ReducersMapObject<StateSchema>
+  asyncReducers?: ReducersMapObject<StateSchema>,
 ) {
-
   const rootReducers: ReducersMapObject<StateSchema> = {
     ...asyncReducers,
     user: userReducer,
-    counter: counterReducer
+    counter: counterReducer,
   }
 
   const reducerManager = createReducerManager(rootReducers)
@@ -28,3 +27,5 @@ export function createReduxStore(
 
   return store
 }
+
+export type AppDispatch = ReturnType<typeof createReduxStore>['dispatch']

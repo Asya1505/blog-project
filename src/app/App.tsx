@@ -3,17 +3,17 @@ import { useTheme } from 'app/providers/ThemeProvider';
 import { Navbar } from 'widgets/Nawbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { Suspense, useEffect } from 'react';
-import { AppRouter } from './providers/router';
 import { useDispatch } from 'react-redux';
 import { userActions } from 'entities/User';
+import { AppRouter } from './providers/router';
 
 const App = () => {
   const { theme } = useTheme()
   const dicpatch = useDispatch()
 
-  useEffect(()=>{
+  useEffect(() => {
     dicpatch(userActions.initAuthData())
-  },[dicpatch])
+  }, [dicpatch])
 
   return (
     <div className={classNames('app', {}, [theme])}>
