@@ -6,7 +6,7 @@ import { LoginFormAsync } from '../LoginForm/LoginForm.async'
 
 interface LoginModalProps {
   isOpen?: boolean,
-  onClose?: () => void
+  onClose: () => void
 }
 
 export const LoginModal = ({ isOpen, onClose }: LoginModalProps) => (
